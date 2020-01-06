@@ -1,14 +1,61 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div class="container">
+    <div class="header">
+      <h1>
+        <img src="assets/images/akb_logo.png" alt="">
+        <span>
+          <ion-icon name="menu" mode="ios"></ion-icon>
+        </span>
+      </h1>
+    </div>
+
+    <div class="content" (panmove)="onPan($event)" [style.bottom.px]="x">
+      <div class="section">
+        <h6>Select Your Service</h6>
+        <br>
+        <ion-row>
+          <ion-col size="3">
+              <img src="assets/images/flight.png" alt="">
+              <ion-label>Flights</ion-label>
+          </ion-col>
+          <ion-col size="3">
+            <img src="assets/images/hotel.png" alt="">
+            <ion-label>Hotels</ion-label>
+          </ion-col>
+          <ion-col size="3">
+            <img src="assets/images/beach.png" alt="">
+            <ion-label>Holidays</ion-label>
+          </ion-col>
+          <ion-col size="3">
+            <img src="assets/images/taxi.png" alt="">
+            <ion-label>Cabs</ion-label>
+          </ion-col>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col size="3">
+              <img src="assets/images/villa.png" alt="">
+              <ion-label>Villas</ion-label>
+          </ion-col>
+          <ion-col size="3">
+            <img src="assets/images/passport.png" alt="">
+            <ion-label>Visa</ion-label>
+          </ion-col>
+          <ion-col size="3">
+            <img src="assets/images/roller-coaster.png" alt="">
+            <ion-label>Attractions</ion-label>
+          </ion-col>
+          <ion-col size="3">
+            <img src="assets/images/travel-guide.png" alt="">
+            <ion-label>Travel Guide</ion-label>
+          </ion-col>
+        </ion-row>
+        <br>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h6>We Build Travel</h6>
+    </div>
   </div>
 </ion-content>
